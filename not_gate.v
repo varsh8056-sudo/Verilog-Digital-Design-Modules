@@ -17,6 +17,6 @@ end
 endmodule
 
 // Code your design here
-module and_gate(input a,output y);
+module not_gate(input a,output y);
   not (y,a);
 endmodule
