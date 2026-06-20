@@ -11,6 +11,7 @@ module ngate;
     #2 $finish;
 always #1 a=~a;
 always@(y)
+   $display("a1:%b, y1:%b",a1,y);
 
 end
 endmodule
