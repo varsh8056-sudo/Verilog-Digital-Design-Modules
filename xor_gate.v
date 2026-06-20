@@ -29,5 +29,5 @@ endmodule
 
 // Code your design here
 module xor_gate(input a,b,output y);
-  xor n1(y,a,b);
+  xor n1(y,a,b);  //structural modeling 
 endmodule
