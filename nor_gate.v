@@ -29,5 +29,5 @@ endmodule
 
 // Code your design here
 module nor_gate(input a,b,output y);
-  nor n1(y,a,b);
+  nor n1(y,a,b);   //structural modelling
 endmodule
