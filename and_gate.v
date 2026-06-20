@@ -30,5 +30,5 @@ endmodule
 
 // Code your design here
 module and_gate(input a,b,output y);
-  and n1(y,a,b);  //structural modelling
+  and (y,a,b);  //structural modelling
 endmodule
