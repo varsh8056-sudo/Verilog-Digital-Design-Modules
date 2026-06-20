@@ -29,5 +29,5 @@ endmodule
 
 // Code your design here
 module nand_gate(input a,b,output y);
-  nand n1(y,a,b);  //structural modeling 
+  nand n1(y,a,b);  //structural modelling 
 endmodule
