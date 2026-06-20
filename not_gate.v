@@ -18,5 +18,5 @@ endmodule
 
 // Code your design here
 module not_gate(input a,output y);
-  not (y,a);
+  not (y,a);  //structural modelling
 endmodule
