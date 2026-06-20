@@ -31,5 +31,5 @@ endmodule
 
 // Code your design here
 module or_gate(input a,b,output y);
-  or(y,a,b);
+  or(y,a,b);    //structural modelling
 endmodule
