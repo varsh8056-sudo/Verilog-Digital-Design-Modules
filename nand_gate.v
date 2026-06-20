@@ -28,6 +28,6 @@ end
 endmodule
 
 // Code your design here
-module and_gate(input a,b,output y);
+module nand_gate(input a,b,output y);
   nand n1(y,a,b);
 endmodule
