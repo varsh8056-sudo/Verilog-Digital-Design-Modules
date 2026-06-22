@@ -13,7 +13,7 @@ module GBcode;
       G3=i[3];
       G2=i[2];
       G1=i[1];
-      G0=i[0];
+      G0=i[0};
       #4;
     end
   end
