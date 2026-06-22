@@ -1,0 +1,30 @@
+// Code your testbench here
+// or browse Examples
+module GBcode;
+  reg G3,G2,G1,G0;
+  wire B3,B2,B1,B0;
+  GtoB code(.g3(G3),.g2(G2),.g1(G1),.g0(G0),.b3(B3),.b2(B2),.b1(B1),.b0(B0));
+            integer i;
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars(0,GBcode);
+    $monitor("TIME=%Ot  | GRAY=%b %b %b %b--> BINARY= %b %b %b %b ",$time,G3,G2,G1,G0,B3,B2,B1,B0,);
+    for(i=0;i<16;i=i+1) begin
+      G3=i[3];
+      G2=i[2];
+      G1=i[1];
+      G0=i[0];
+      #4;
+    end
+  end
+endmodule
+
+
+
+// Code your design here
+module GtoB(input g3,g2,g1,g0,output b3,b2,b1,b0);
+ assign b3=g3;
+  xor(b2,b3,g2);
+  xor(b1,b2,g1);
+  xor(b0,b1,g0);
+  endmodule
